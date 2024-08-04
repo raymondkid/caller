@@ -24,7 +24,7 @@ if api_key:
 
         # Claude에 요청
         response = anthropic.completions.create(
-            model="claude-3-5-sonnet-20240620",
+            model="claude-3-sonnet-20240620",
             max_tokens_to_sample=1000,
             prompt=f"Human: {user_input}\n\nAssistant: ",
         )
